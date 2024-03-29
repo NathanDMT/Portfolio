@@ -1,0 +1,19 @@
+.Topnav {
+  display: flex;
+  background-color: $color-bg-header;
+  justify-content: space-around;
+  align-items: center;
+  height: 4em;
+  width: 100%;
+
+  &_img {
+    height: 53px;
+    width: 48px;
+    border-radius: 60px;
+  }
+
+  &>a {
+    text-decoration: none;
+    color: white;
+  }
+}
