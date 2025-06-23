@@ -4,9 +4,11 @@ namespace Controller;
 
 use Twig\Environment;
 
-class projectsController {
+class VeilleController {
+
     public function __construct(Environment $twig)
     {
-            echo $twig->render('projects.html.twig');
+        echo $twig->render('veille.html.twig');
     }
 }
+
