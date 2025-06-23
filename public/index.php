@@ -39,6 +39,8 @@ $routes->add('competences', new Route('/competences'));
 $routes->add('experiences', new Route('/experiences'));
 $routes->add('projects', new Route('/projects'));
 $routes->add('studies', new Route('/studies'));
+$routes->add('veille', new Route('/veille'));
+
 
 $request = Request::createFromGlobals();
 
@@ -47,10 +49,13 @@ $context->fromRequest($request);
 $matcher = new UrlMatcher($routes, $context);
 
 try {
-    $competencesController = new Controller\competencesController($twig);
     extract($matcher->match($request->getPathInfo()), EXTR_SKIP);
-    $controllerRoute = $_route . "Controller.php";
-    require_once realpath("../src/Controller/$controllerRoute");
+    $controllerRoute = $_route . "Controller";
+    require_once realpath("../src/Controller/$controllerRoute.php");
+    
+    $controllerClass = "Controller\\" . $controllerRoute;
+    $controller = new $controllerClass($twig);
+
 } catch (Exception $exception) {
     echo $twig->render('home.html.twig');
 }

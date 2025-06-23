@@ -4,7 +4,7 @@ namespace Controller;
 
 use Twig\Environment;
 
-class experiencesController
+class ExperiencesController
 {
     public function __construct(Environment $twig)
     {

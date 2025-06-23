@@ -7,9 +7,8 @@
 @import "_initFont";
 
 /************** Block **************/
-@import "Card";
-@import "Footer";
-@import "Home";
-@import "Navbar";
-@import "Title";
-@import "CardSmaller";
+@import "_Card";
+@import "_Footer";
+@import "_Home";
+@import "_Navbar";
+@import "_Formating";

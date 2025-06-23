@@ -1,33 +1,17 @@
-.Footer_static {
-  position: absolute;
-  bottom: 2.4px;
-  width: 100%;
-
-  &_text {
-    display: flex;
-    background-color: $footer-bg-color;
-    justify-content: space-around;
-    align-items: center;
-    height: 3em;
-
-  &>a {
-    text-decoration: none;
-    color: white;
-  }
-
-  }
-
-  &_img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50px;
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.Footer_auto {
-  position: absolute;
-  bottom: auto;
+main {
+  flex: 1;
+}
+
+.Footer {
   width: 100%;
+  margin-top: auto;
 
   &_text {
     display: flex;
@@ -36,16 +20,15 @@
     align-items: center;
     height: 3em;
 
-    &>a {
+    & > a {
       text-decoration: none;
       color: white;
     }
-
   }
 
   &_img {
-    height: 40px;
-    width: 40px;
+    height: 2.5em;
+    width: 2.5em;
     border-radius: 50px;
   }
 }

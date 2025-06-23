@@ -1,4 +1,4 @@
-{% extends "base_static.html.twig" %}
+{% extends "base.html.twig" %}
 
 {% block css %}
     <link rel="stylesheet" href="../public/style.css">
@@ -7,8 +7,14 @@
 {% block body %}
     <div class="Home">
     <h1 class="Home_title">Bienvenue sur mon Portfolio!</h1>
-        <p class="Home_subtitle">Présentation</p>>
-        <p class="Home_text"> Je m'appelles Nathan DEMOINERET, j'ai 19 ans et je suis passionné d'informatique & de développement</p>
-    </div>
+        <p class="Home_subtitle">Présentation</p>
+        </div>
+        <div class = "Card_home">
+            <img class = "Card_home_image_no_shadow" src="images/conversation.png">
+            <p class="Card_home_text">
+                Je m'appelle <strong>Nathan DEMOINERET</strong>, j’ai 19 ans et je suis passionné par l’informatique et le développement. Depuis mon plus jeune âge, j’ai grandi dans un environnement où l’informatique occupait une place centrale. Très tôt, je me suis intéressé au <em>hardware</em>, apprenant à monter, démonter et optimiser des configurations, ce qui m’a permis de développer une compréhension concrète du fonctionnement des machines.<br><br>
+                Cette première passion m’a naturellement conduit vers le <strong>développement logiciel</strong>, un domaine où je peux allier logique, créativité et résolution de problèmes. À travers mes études et mes projets personnels, j’ai acquis des compétences solides dans plusieurs langages et technologies, et je prends toujours plaisir à apprendre de nouvelles choses, à explorer de nouveaux outils et à relever des défis techniques.
+            </p>
+        </div>
 {% endblock %}
 

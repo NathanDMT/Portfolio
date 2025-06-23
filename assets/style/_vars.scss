@@ -4,7 +4,6 @@
 
 /************** Couleur du thème **************/
 $primary-color: #1e2e3b;
-
 $card-color: #263a4a;
 
 /************** Grid **************/
@@ -38,7 +37,8 @@ $brand-font-family: 'Oxygen', sans-serif;
 
 /************** Card **************/
 $card-border-color: #d5e3ec;
-$card-border-color-hover: darken($card-border-color, 20%);
+$card-border-color-hover: adjust-color($card-border-color, $lightness: -20%);
+$card-background-color: #2d4152;
 
 /************** Header **************/
 $color-bg-header: #005d80;
