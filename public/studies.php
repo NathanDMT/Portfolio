@@ -4,4 +4,12 @@ require_once('../vendor/autoload.php');
 $loader = new \Twig\Loader\FilesystemLoader('../templates');
 $twig = new \Twig\Environment($loader);
 
-echo $twig->render('studies.html.twig');
+try {
+    echo $twig->render('studies.html.twig');
+} catch (\Twig\Error\LoaderError $e) {
+
+} catch (\Twig\Error\RuntimeError $e) {
+
+} catch (\Twig\Error\SyntaxError $e) {
+
+}

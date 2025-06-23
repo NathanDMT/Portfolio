@@ -7,7 +7,7 @@ $twig = new \Twig\Environment($loader);
 try {
     echo $twig->render('projects.html.twig');
 } catch (\Twig\Error\LoaderError $e) {
-    
+
 } catch (\Twig\Error\RuntimeError $e) {
 
 } catch (\Twig\Error\SyntaxError $e) {
