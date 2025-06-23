@@ -51,7 +51,7 @@ $matcher = new UrlMatcher($routes, $context);
 try {
     extract($matcher->match($request->getPathInfo()), EXTR_SKIP);
     $controllerRoute = $_route . "Controller";
-    require_once realpath("../src/Controller/$controllerRoute.php");
+    require_once "../src/Controller/$controllerRoute.php";
     
     $controllerClass = "Controller\\" . $controllerRoute;
     $controller = new $controllerClass($twig);
